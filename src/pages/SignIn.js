@@ -66,7 +66,7 @@ const SignIn = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/signup", {
+      await axios.post("https://assignment-backend-virid.vercel.app/signup", {
         email,
         isAdmin,
         password
