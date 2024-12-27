@@ -12,16 +12,6 @@ const Dashboard = () => {
         <Navbar currentUserEmail={user.email} userRole={user.role} userName={user.name} />
 
       <h1 className="dashboard-title">Dashboard</h1>
-
-      {/*<nav className="dashboard-nav">
-        <Link to="/tasks" className="dashboard-link">
-          Tasks
-        </Link>
-        <Link to="/users" className="dashboard-link">
-          Users
-        </Link>
-      </nav>
-      */}
     </div>
   );
 };

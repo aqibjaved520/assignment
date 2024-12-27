@@ -7,7 +7,6 @@ const Navbar = ({ userRole, userName, currentUserEmail }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  // Define menu options based on user role
   const menuOptions = [
     { name: "Dashboard", icon: <FaHome />, route: "/dashboard" },
     ...(userRole === "Admin" || userRole === "Manager"
@@ -19,7 +18,7 @@ const Navbar = ({ userRole, userName, currentUserEmail }) => {
   ];
 
   const handleLogout = () => {
-    localStorage.clear(); // Clear local storage
+    localStorage.clear(); 
     navigate("/"); 
   };
 

@@ -19,15 +19,15 @@ body {
   }
   
   .task-priority-high {
-    color: #ff0000; /* Red for High */
+    color: #ff0000; 
   }
   
   .task-priority-medium {
-    color: #ff7f00; /* Orange for Medium */
+    color: #ff7f00; 
   }
   
   .task-priority-low {
-    color: #008000; /* Green for Low */
+    color: #008000; 
   }
   
   .form-container {

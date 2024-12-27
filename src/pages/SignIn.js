@@ -15,7 +15,7 @@ const SignIn = () => {
   const getFreshToken = async () => {
     const user = auth.currentUser;
     if (user) {
-      return await user.getIdToken(true); // 'true' forces token refresh
+      return await user.getIdToken(true); 
     }
     throw new Error("No authenticated user found");
   };
@@ -141,15 +141,6 @@ const SignIn = () => {
           {isSignup ? "Sign Up" : "Sign In"}
         </button>
       </form>
-      {/*<p style={{ textAlign: "center", marginTop: "10px" }}>
-        {isSignup ? "Already have an account?" : "Don't have an account?"}{" "}
-        <span
-          onClick={() => setIsSignup(!isSignup)}
-          style={{ color: "#007bff", cursor: "pointer" }}
-        >
-          {isSignup ? "Sign In" : "Sign Up"}
-        </span>
-      </p> */}
     </div>
   );
 };
